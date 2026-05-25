@@ -1,24 +1,17 @@
-## 🛡️ AI Security & Algorithmic Audit
+Hago cosas con AI y código. A veces funcionan.
 
-Dual-track work at the intersection of **AI Agent Security** and **Public Transparency**.
+- Intento que los agentes AI no hagan cosas que no deberían
+- También ayudo a que la gente vea cómo se gasta la plata pública
 
-### 🔬 AI Security Research
+### Lo que estoy armando
 
-- **[aiagentobservatory.org](https://aiagentobservatory.org)** — Agentic AI Risks & Security research
-- **[mcpwn](https://github.com/Carlos-Projects/mcpwn)** — Offensive security testing framework for MCP protocol (command injection, SSRF, RCE blind, tool poisoning)
-- **[agentgate](https://github.com/Carlos-Projects/agentgate)** — Policy-based firewall and honeypot middleware for AI agents accessing websites
-- **[palisade-scanner](https://github.com/Carlos-Projects/palisade-scanner)** — Scan web content for prompt injection and hidden adversarial instructions targeting AI agents
-- **[mcpscope](https://github.com/Carlos-Projects/mcpscope)** — Unified MCP/A2A security scanner dashboard
+- **[aiagentobservatory.org](https://aiagentobservatory.org)** — Cosas sobre riesgos de agentes AI
+- **[mcpwn](https://github.com/Carlos-Projects/mcpwn)** — Le sacamos vulnerabilidades a servidores MCP
+- **[agentgate](https://github.com/Carlos-Projects/agentgate)** — Un firewall para cuando los AI agents navegan por internet
+- **[palisade-scanner](https://github.com/Carlos-Projects/palisade-scanner)** — Busca prompt injection en páginas web
+- **[mcpscope](https://github.com/Carlos-Projects/mcpscope)** — Dashboard para ver resultados de scanners MCP/A2A
+- **[veeduria](https://github.com/Carlos-Projects/veeduria)** — Plataforma para vigilar contrataciones públicas con IA
 
-### 🏛️ Public Oversight
-
-- **[veeduria.online](https://veeduria.online)** — VeedurIA: Plataforma de Vigilancia de Contratación Pública
-- **[veeduria](https://github.com/Carlos-Projects/veeduria)** — Auditoría algorítmica de contratación pública con IA
-
-### 📫 Contact
+### Contacto
 
 `carlos@aiagentobservatory.org`
-
----
-
-*AI agent security research & algorithmic auditing for government transparency.*
