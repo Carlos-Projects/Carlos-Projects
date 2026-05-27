@@ -1,24 +1,66 @@
-### Agentic AI Security
+# Carlos Projects
 
-MCP · A2A · Prompt Injection · LLM Red Teaming
+Building open-source security infrastructure for AI agents, MCP servers, RAG pipelines, and model supply chains.
 
-### Projects
+## Focus
 
-**[mcpwn](https://github.com/Carlos-Projects/mcpwn)** — Offensive security testing framework for MCP protocol. Enumerates server tools, tests for command injection (5 payload types), SSRF (internal endpoints, cloud metadata), blind RCE (timing-based), tool poisoning (name shadowing, description manipulation), and path traversal. Outputs structured JSON findings and HTML reports. Includes deliberately vulnerable MCP server for training. Python, MCP SDK, asyncio, httpx, Jinja2.
+- **MCP / A2A red-team testing** — Active exploitation before attackers
+- **Prompt injection detection** — Static + LLM-assisted scanning of any URL
+- **Agent firewalling and honeypots** — Policy-based perimeter for websites
+- **RAG and fine-tuning security** — Adversarial data detection in pipelines
+- **AI model provenance and integrity** — SBOM, manifests, supply chain auditing
+- **Agent incident forensics** — Post-incident reconstruction and replay
 
-**[agentgate](https://github.com/Carlos-Projects/agentgate)** — Transparent HTTP proxy for AI agents. Enforces navigation policies, blocks malicious domains, injects canary tokens and honeypot responses for threat detection. Supports MCP-compatible agent traffic. Python, mitmproxy, Starlette.
+## Flagship Projects
 
-**[palisade-scanner](https://github.com/Carlos-Projects/palisade-scanner)** — Static and LLM-assisted scanner that detects prompt injection, hidden instructions, jailbreak payloads, and adversarial markup in web content targeting LLM agents. YARA rules + LLM-as-judge dual-engine architecture.
+### [MCPwn](https://github.com/Carlos-Projects/mcpwn)
+Active offensive security testing framework for MCP servers. Sends real attack payloads, confirms command injection, SSRF, blind RCE, tool poisoning, and path traversal. Includes a deliberately vulnerable lab server for safe practice.
 
-**[mcpscope](https://github.com/Carlos-Projects/mcpscope)** — Aggregation dashboard that ingests outputs from multiple MCP/A2A scanners (Cisco, mcp-scan, mcpwn) and presents unified findings with historical trending. FastAPI, SQLite, Plotly.
+### [Palisade Scanner](https://github.com/Carlos-Projects/palisade-scanner)
+Scan URLs, HTML, and documents for hidden prompt injection, invisible instructions, metadata attacks, zero-width characters, and adversarial content targeting AI agents. [Try it live](https://huggingface.co/spaces/Syntho/palisade-scanner).
 
-### Research
+### [AgentGate](https://github.com/Carlos-Projects/agentgate)
+Policy-based firewall and honeypot middleware for AI agents accessing websites. Detects automated traffic, scores risk, enforces graduated responses (allow → challenge → sandbox → block), and provides real-time observability.
 
-**[aiagentobservatory.org](https://aiagentobservatory.org)** — MCP protocol attack surface analysis, A2A agent card validation, supply chain risks in agent ecosystems.
+---
+
+## Ecosystem
+
+```
+Carlos-Projects
+│
+├── mcpwn               Attack MCP servers before attackers do.
+├── palisade-scanner    Scan web content before agents consume it.
+├── agentgate           Control how agents access your website.
+├── mcpscope            Centralize scanner results and security posture.
+├── mcpguard            Runtime security proxy for MCP/A2A protocols.
+│
+├── RAGuard             Test retrieval pipelines for adversarial data.
+├── AIShield            Secure fine-tuning datasets, LoRA adapters, weights.
+├── modelchain          Generate SBOM/provenance for AI model supply chains.
+│
+├── mcp-taxonomy        Canonical classification taxonomy for MCP security.
+├── agentforensics      Post-incident forensics for AI agent behavior.
+└── threatlens          Threat intelligence aggregation and correlation.
+```
+
+## Maturity
+
+| Tier | Projects | Description |
+|------|----------|-------------|
+| **Production-ready** | mcpwn, palisade-scanner, agentgate | CLI-installable, CI/CD, tested, documented |
+| **Experimental** | RAGuard, AIShield, modelchain, agentforensics | Working but evolving — APIs may change |
+| **Research / Taxonomy** | mcp-taxonomy, threatlens | Foundational standards and detection data |
+
+## Thesis
+
+As AI agents gain tools, memory, browsers, and payment capabilities, the attack surface shifts from prompts to operational environments. This account builds security primitives for that transition — from red-teaming MCP tool servers to scanning web content for adversarial instructions to auditing model supply chains.
+
+---
 
 ### Public Sector
 
-**[veeduria](https://github.com/Carlos-Projects/veeduria)** — Platform for algorithmic auditing of public procurement. NLP-based contract classification, anomaly detection in bidding patterns, automated transparency reporting. Python, FastAPI, PostgreSQL, Streamlit, spaCy.
+[**veeduria**](https://github.com/Carlos-Projects/veeduria) — Platform for algorithmic auditing of public procurement across Latin America (Colombia, Mexico, Argentina, Peru). NLP-based contract classification, anomaly detection, ML risk scoring.
 
 ---
 
